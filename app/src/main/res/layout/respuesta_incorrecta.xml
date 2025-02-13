@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/explicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explicación aquí"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/button_volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

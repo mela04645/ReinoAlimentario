@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#3C729D">
+
+    <!-- Imagen del animal -->
+    <ImageView
+        android:id="@+id/imagenAnimal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/leon" />
+
+    <!-- Nombre del animal -->
+    <TextView
+        android:id="@+id/nombreAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="León"
+        android:textColor="#0D0C0C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <!-- Grupo de opciones -->
+    <RadioGroup
+        android:id="@+id/grupoOpciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón para verificar la respuesta -->
+    <Button
+        android:id="@+id/botonVerificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verificar"
+        android:layout_marginTop="16dp" />
+
+    <!-- Texto de resultado (Correcto o Incorrecto) -->
+    <TextView
+        android:id="@+id/resultadoTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <!-- Botón para pasar al siguiente animal -->
+    <Button
+        android:id="@+id/botonSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
